@@ -1,5 +1,5 @@
 {
-  "name": "now-serveless-template",
+  "name": "scraper",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,9 +8,15 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "now dev"
+    "dev": "node -r esm index.js"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "esm": "^3.2.25",
+    "express": "^4.17.1"
+  }
 }
